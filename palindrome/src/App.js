@@ -14,6 +14,7 @@ function App() {
     setWord(event.target.value)
   }
 
+  // render
   return (
     <div className="App">
       <h1>Palindrome App</h1>

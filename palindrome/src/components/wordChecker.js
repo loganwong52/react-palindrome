@@ -13,10 +13,12 @@ function WordChecker(props) {
     }
 
     // render
+    // onChange continusouly checks userInput, sending it into handleInput to update state
+    // and then it checks if it's a palindrome
+    // Ternarary if-statement used to determine [is/is not]
     return (
         <div>
             <input id="input-box" type="text" placeholder='Enter word' onChange={handleInput} />
-            <br />
             <br />
             <p id="inform-user">
                 {word}
